@@ -1,0 +1,396 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'robotolight';
+    color: rgb(107, 106, 106);
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+h1,
+h2,
+h3 {
+    text-transform: uppercase;
+    user-select: none;
+}
+
+h3 {
+    height: 20px;
+    font-family: 'robotolight';
+    color: black;
+    font-size: .8em;
+    letter-spacing: .3em;
+    text-align: center;
+    margin: 15px auto;
+}
+
+p {
+    font-family: 'robotothin';
+    line-height: 1.5em;
+    margin: 0em 1em 1em 1em;
+}
+
+/* ************* */
+/* Header + Nav */
+/* *********** */
+
+header {
+    background: url(../img/big-logo.png),
+        url(../img/hero_background.jpg) fixed;
+    background-size: 100%, 100%;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center 190px, top;
+    min-height: 600px;
+    position: relative;
+}
+
+header>nav ul {
+    display: flex;
+    padding: 1em;
+}
+
+header>nav>img {
+    height: 1.5em;
+    margin: .4em 0 0 .8em;
+}
+
+header>nav {
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+}
+
+header>nav>ul>li>a {
+    font-size: .8em;
+    letter-spacing: .15em;
+    color: white;
+    text-transform: uppercase;
+    padding: 1.5em;
+    transition: color 0.5s ease;
+}
+
+header>nav>ul>li>a:hover {
+    transition: 0.3s;
+    color: rgb(115, 146, 155);
+    font-size: .801em;
+}
+
+header>h1 {
+    font-size: .9em;
+    letter-spacing: .35em;
+    color: white;
+    position: absolute;
+    bottom: 73%;
+    width: 100%;
+    text-align: center;
+}
+
+/* *************************** */
+/* Seccóon Nuestros Servícios */
+/* ************************* */
+
+main>section:first-child>div>h2 {
+    text-align: center;
+    font-size: 1.2em;
+    letter-spacing: .50em;
+    color: rgb(102, 101, 101);
+}
+
+main>section:first-child {
+    margin: 6em 5em;
+}
+
+main>section>div>ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+    margin: 6em auto 3em auto;
+    flex-wrap: wrap;
+}
+
+main>section>div>ul>li>a {
+    font-family: 'robotothin';
+    color: rgb(102, 101, 101);
+    font-size: .8em;
+    letter-spacing: .3em;
+    text-align: center;
+    display: grid;
+    transition: color 0.5s ease;
+}
+
+main>section>div>ul>li>a:hover {
+    font-family: 'robotolight';
+    transition-duration: 0.5s;
+    color: black;
+}
+
+main>section>div>ul>li>a>img {
+    margin: 1em auto 1.3em auto;
+    height: 5.5em;
+}
+
+main>section>div>div {
+    display: flex;
+}
+
+main>section>div>div>p>a {
+    text-transform: inherit;
+    color: black;
+    float: right;
+    margin-top: 3em;
+    transition: color 0.5s ease;
+}
+
+main>section>div>div>p>a:hover {
+    transition-duration: 0.3s;
+    font-weight: bolder;
+}
+
+/* ***************** */
+/* Aside Newsletter */
+/* *************** */
+
+aside {
+    background-color: rgb(238, 238, 238);
+    height: 15em;
+    text-align: center;
+    padding: 5em;
+
+}
+
+aside>h2 {
+    text-align: center;
+    font-size: 1.2em;
+    letter-spacing: .2em;
+    color: rgb(102, 101, 101);
+}
+
+aside>a {
+    color: white;
+    font-size: .8em;
+    letter-spacing: .12em;
+    width: 12em;
+    padding: .9em 0px;
+    margin: 15px auto;
+    display: block;
+    border: 1px solid rgb(49, 49, 49);
+    background-color: rgb(37, 37, 37);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    transition: color 0.5s ease-out;
+}
+
+aside>a:hover {
+    transition-duration: .3s;
+    color: rgb(115, 146, 155);
+}
+
+aside>small {
+    font-family: 'robotothin';
+    color: rgb(102, 101, 101);
+    letter-spacing: .1em;
+    font-size: .6em;
+}
+
+/* ******************************* */
+/* Sección soluciones para evento */
+/* ***************************** */
+
+aside+section {
+    background: url(../img/logo-detalle.png),
+        url(../img/cancan-background.jpg) fixed;
+    background-position: 53em, center -10em;
+    background-repeat: no-repeat;
+    background-size: 31em, cover;
+    height: 34em;
+}
+
+aside+section>div {
+    width: 50em;
+    padding: 10em 6em;
+}
+
+aside+section>div>h2 {
+    font-size: 1.1em;
+    line-height: 23px;
+    font-family: 'robotothin';
+    color: white;
+    letter-spacing: .3em;
+    margin-bottom: 1em;
+}
+
+aside+section>div>p {
+    font-family: 'robotothin';
+    color: white;
+    letter-spacing: .04em;
+    margin: 0em 0em 3em 0em;
+}
+
+aside+section>div>a {
+    color: black;
+    font-size: .8em;
+    letter-spacing: .12em;
+    padding: .8em 3em;
+    border: 1px solid rgb(228, 227, 227);
+    background-color: rgb(226, 225, 225);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    transition: background-color 0.5s ease-out;
+}
+
+aside+section>div>a:hover {
+    transition-duration: .2s;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+}
+
+/* ************************* */
+/* Sección Nuestros Valores */
+/* *********************** */
+
+#our-values {
+    margin: 6em 5em;
+}
+
+#our-values>div>ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: baseline;
+    padding: 1em;
+}
+
+#our-values>div>ul>li {
+    width: 26em;
+}
+
+#our-values>div>ul>li>img {
+    display: inherit;
+    margin: 1em auto 1em auto;
+    height: 4em;
+}
+
+
+main>section+section>div>h2:first-child {
+    text-align: center;
+    font-size: 1.1em;
+    letter-spacing: .50em;
+    color: rgb(102, 101, 101);
+}
+
+/* ******* */
+/* Footer */
+/* ***** */
+
+footer {
+    background-color: rgb(238, 238, 238);
+    background-image: url(../img/logo-footer.png);
+    background-size: 6em;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 30em;
+    font-size: .8em;
+    font-family: 'robotothin';
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+footer>small {
+    position: absolute;
+    bottom: 20%;
+
+}
+
+footer>small>a {
+    text-transform: inherit;
+    color: black;
+}
+
+footer>small>a:hover {
+    font-weight: bold;
+    transition-duration: .3s;
+}
+
+/* MEDIA QUERIS */
+
+@media screen and (max-width: 800px) {
+    header>nav ul li {
+        display: none;
+    }
+
+    header {
+        background-size: 90%, 100%;
+        background-position: center 79%, top;
+        min-height: 400px;
+        position: relative;
+    }
+
+    header h1 {
+        bottom: 65%;
+    }
+
+    main>section>div>ul>li>a{
+        font-size: .7em;
+    }
+
+    main>section:first-child {
+        margin: 4em 2em 6em;
+    }
+
+    main>section>div>ul {
+        margin: 0;
+        padding: 2em .3em 3em;
+    }
+
+    main>section>div>div {
+        display: block;
+    }
+
+    aside+section {
+        height: 100%;
+
+    }
+
+    aside+section {
+        background: url(../img/logo-detalle.png), url(../img/cancan-background.jpg) fixed;
+        background-position: 53em, center 0em;
+        background-repeat: no-repeat;
+        background-size: 0, cover;
+    }
+
+    #our-values>div>ul>li {
+        width: 100%;
+        text-align: center;
+    }
+
+    #our-values {
+        margin: 3em 2em 1em;
+    }
+
+    aside+section>div {
+        width: 100vw;
+        padding: 7em 2em 5em;
+        text-align: center;
+
+    }
+
+    p {
+        margin: 0em 0em 1em 0em;
+    }
+
+    footer {
+        height: 26vh;
+    }
+}
